@@ -141,3 +141,10 @@ h1 {
     text-shadow:-1px -1px 6px #000000;
 }
 
+.btn-success {
+    margin-top: 50px;
+}
+
+.btn-danger {
+    margin-top: 50px;
+}
