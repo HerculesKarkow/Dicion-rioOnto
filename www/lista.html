@@ -1,49 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/lista.css">
 	<title>Login</title>
 </head>
 <body>
-	<div class="from-group">
-            <h1>Dicionário de Ontopsicologia</h1>
-                <table align="center" width="70%" id="tblPalavras" border="2">
-                <tr style="">
-                    <th>Ameixa preta</a></th>
-                </tr>
-                <tr>
-                    <th>afaieufh</th>
-                </tr>
-                <tr>
-                    <th>afaieufh</th>
-                </tr>
-                <tr>
-                    <th>afaieufh</th>
-                </tr>
-                <tr>
-                    <th>afaieufh</th>
-                </tr>
-                <tr>
-                    <th>afaieufh</th>
-                </tr>
-                <tr>
-                    <th>afaieufh</th>
-                </tr>
-                <tr>
-                    <th>afaieufh</th>
-                </tr>
-
-                   
-                </table>
+<div class="panel-group" id="accordion"> <!-- accordion 1 -->
+   <div class="panel panel-primary">
+   
+        <div class="panel-heading"> <!-- panel-heading -->
+            <h4 class="panel-title"> <!-- title 1 -->
+            <a data-toggle="collapse" data-parent="#accordion" href="#accordionOne">
+              a
+            </a>
+           </h4>
         </div>
+    <!-- panel body -->
+        <div id="accordionOne" class="panel-collapse collapse in">
+          <div class="panel-body">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat
+          </div>
+        </div>
+  </div>
+  
+   <div class="panel panel-success">  <!-- accordion 2 -->
+    
+          <div class="panel-heading"> 
+          <h4 class="panel-title"> <!-- title 2 -->
+            <a data-toggle="collapse" data-parent="#accordion" href="#accordionTwo">
+              b
+            </a>
+          </h4>
+          </div>
+     <!-- panel body -->
+        <div id="accordionTwo" class="panel-collapse collapse">
+          <div class="panel-body">
+            Change does not roll in on the wheels of inevitability,
+            but comes through continuous struggle.
+            And so we must straighten our backs and work for
+            our freedom. A man can't ride you unless your back is bent.
+          </div>
+        </div>
+    
+   </div>
+   
+    <div class="panel panel-warning">  <!-- accordion 3 -->
+  
+        <div class="panel-heading">
+          <h4 class="panel-title"> <!-- title 3 -->
+            <a data-toggle="collapse" data-parent="#accordion" href="#accordionThree">
+              c
+            </a>
+          </h4>
+        </div>
+    
+        <div id="accordionThree" class="panel-collapse collapse">
+          <!-- panel body -->
+          <div class="panel-body">
+          You must take personal responsibility.
+            You cannot change the circumstances,
+            the seasons, or the wind, but you can change yourself.
+            That is something you have charge of.
+        </div>
+    
+     </div>
+   
+ </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/lista.js"></script>
 </body>
 </html>
