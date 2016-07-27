@@ -6,8 +6,7 @@
     float: left;
     margin-top: 2px;
     position: absolute;
-    margin: 0 !important;
-    padding: 0!important;
+    display: block;
 }
 .stylish-input-group .input-group-addon{
     background: white !important; 
