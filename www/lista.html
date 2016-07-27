@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
@@ -13,36 +13,22 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="css/lista.css">
-	<title>Lista</title>
+	       <title>Lista</title>
 </head>
 <body>
-
-<!-- Procurar-->
-<div class="container">
-  <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-            <div id="imaginary_container"> 
-                <div class="input-group stylish-input-group">
-                    <input type="text" class="form-control"  placeholder="Procurar.." >
-                    <span class="input-group-addon">
-                        <button type="submit">
-                            <span class="glyphicon glyphicon-search"></span>
-                        </button>  
-                    </span>
-                </div>
-            </div>
-        </div>
-  </div>
-</div>
-
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="col-xs-12">
+        <input type="text" class="form-control">
+      </div>
+    </div>
+  </nav>
 <div class="panel-group" id="accordion">
 
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionUm" aria-expanded="false" aria-controls="accordionUm">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionUm">
-              Item 1
-            </a>
+          Item 1
           </h4>
           </div>
         <div id="accordionUm" class="panel-collapse collapse">
@@ -51,12 +37,10 @@
           </div>
         </div>
    </div>
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionDois" aria-expanded="false" aria-controls="accordionDois">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionDois">
               Item 2
-            </a>
           </h4>
           </div>
         <div id="accordionDois" class="panel-collapse collapse">
@@ -65,12 +49,10 @@
           </div>
         </div>
    </div>
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionTres" aria-expanded="false" aria-controls="accordionTres">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionTres">
               Item 3
-            </a>
           </h4>
           </div>
         <div id="accordionTres" class="panel-collapse collapse">
@@ -79,12 +61,10 @@
           </div>
         </div>
    </div>
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionQuatro" aria-expanded="false" aria-controls="accordionQuatro">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionQuatro">
               Item 4
-            </a>
           </h4>
           </div>
         <div id="accordionQuatro" class="panel-collapse collapse">
@@ -93,13 +73,11 @@
           </div>
         </div>
    </div>
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionCinco" aria-expanded="false" aria-controls="accordionCinco">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionCinco">
               Item 5
             </a>
-          </h4>
           </div>
         <div id="accordionCinco" class="panel-collapse collapse">
           <div class="panel-body">
@@ -107,12 +85,10 @@
           </div>
         </div>
    </div>
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionSeis" aria-expanded="false" aria-controls="accordionSeis">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionSeis">
               Item 6
-            </a>
           </h4>
           </div>
         <div id="accordionSeis" class="panel-collapse collapse">
@@ -121,12 +97,10 @@
           </div>
         </div>
    </div>
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionSete" aria-expanded="false" aria-controls="accordionSete">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionSete">
               Item 7
-            </a>
           </h4>
           </div>
         <div id="accordionSete" class="panel-collapse collapse">
@@ -135,12 +109,10 @@
           </div>
         </div>
    </div>
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionOito" aria-expanded="false" aria-controls="accordionOito">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionOito">
               Item 8
-            </a>
           </h4>
           </div>
         <div id="accordionOito" class="panel-collapse collapse">
@@ -149,12 +121,10 @@
           </div>
         </div>
    </div>
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionNove" aria-expanded="false" aria-controls="accordionNove">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionNove">
               Item 9
-            </a>
           </h4>
           </div>
         <div id="accordionNove" class="panel-collapse collapse">
@@ -163,12 +133,10 @@
           </div>
         </div>
    </div>
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionDez" aria-expanded="false" aria-controls="accordionDez">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionDez">
               Item 10
-            </a>
           </h4>
           </div>
         <div id="accordionDez" class="panel-collapse collapse">
@@ -177,12 +145,10 @@
           </div>
         </div>
    </div>
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionOnze" aria-expanded="false" aria-controls="accordionOnze">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionOnze">
               Item 11
-            </a>
           </h4>
           </div>
         <div id="accordionOnze" class="panel-collapse collapse">
@@ -191,12 +157,10 @@
           </div>
         </div>
    </div>
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionDoze" aria-expanded="false" aria-controls="accordionDoze">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionDoze">
               Item 12
-            </a>
           </h4>
           </div>
         <div id="accordionDoze" class="panel-collapse collapse">
@@ -205,12 +169,10 @@
           </div>
         </div>
    </div>
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionTreze" aria-expanded="false" aria-controls="accordionTreze">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionTreze">
               Item 13
-            </a>
           </h4>
           </div>
         <div id="accordionTreze" class="panel-collapse collapse">
@@ -219,12 +181,10 @@
           </div>
         </div>
    </div>
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionCatorze" aria-expanded="false" aria-controls="accordionCatorze">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionCatorze">
               Item 14
-            </a>
           </h4>
           </div>
         <div id="accordionCatorze" class="panel-collapse collapse">
@@ -233,12 +193,10 @@
           </div>
         </div>
    </div>
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionQuinze" aria-expanded="false" aria-controls="accordionQuinze">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionQuinze">
               Item 15
-            </a>
           </h4>
           </div>
         <div id="accordionQuinze" class="panel-collapse collapse">
@@ -247,12 +205,10 @@
           </div>
         </div>
    </div>
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionDezesseis" aria-expanded="false" aria-controls="accordionDezesseis">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionDezesseis">
               Item 16
-            </a>
           </h4>
           </div>
         <div id="accordionDezesseis" class="panel-collapse collapse">
@@ -261,12 +217,10 @@
           </div>
         </div>
    </div>
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionDezessete" aria-expanded="false" aria-controls="accordionDezessete">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionDezessete">
               Item 17
-            </a>
           </h4>
           </div>
         <div id="accordionDezessete" class="panel-collapse collapse">
@@ -275,12 +229,10 @@
           </div>
         </div>
    </div>
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionDezoito" aria-expanded="false" aria-controls="accordionDezoito">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionDezoito">
               Item 18
-            </a>
           </h4>
           </div>
         <div id="accordionDezoito" class="panel-collapse collapse">
@@ -289,12 +241,10 @@
           </div>
         </div>
    </div>
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionDezenove" aria-expanded="false" aria-controls="accordionDezenove">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionDezenove">
               Item 19
-            </a>
           </h4>
           </div>
         <div id="accordionDezenove" class="panel-collapse collapse">
@@ -303,12 +253,10 @@
           </div>
         </div>
    </div>
-   <div class="panel panel-success">
+   <div class="panel panel-success" data-toggle="collapse" data-target="#accordionVinte" aria-expanded="false" aria-controls="accordionVinte">
           <div class="panel-heading"> 
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#accordionVinte">
               Item 20
-            </a>
           </h4>
           </div>
         <div id="accordionVinte" class="panel-collapse collapse">
