@@ -12,7 +12,6 @@ gulp.task('default', function () {
             'node_modules/bootstrap/fonts/glyphicons-halflings-regular.ttf',
             'node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff',
             'node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff2',
-            
         ])
 		.pipe(gulpCopy('www'));
 });
