@@ -10,11 +10,11 @@ h4 {
     text-align: center;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-}
-
 .panel-heading{
     background-color: green;
+}
+
+a:hover {
+	text-decoration: none;
+	color: black;
 }
