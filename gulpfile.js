@@ -13,8 +13,8 @@ gulp.task('default', function () {
             'node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff',
             'node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff2',
             'platforms/browser/www/cordova.js',
-            'platforms/ios/www/cordova.js'.,
-            'platforms/android/www/cordova.js'.,
+            'platforms/ios/www/cordova.js',
+            'platforms/android/www/cordova.js',
         ])
 		.pipe(gulpCopy('www'));
 });
