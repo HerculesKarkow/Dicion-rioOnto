@@ -6,8 +6,8 @@ body {
 .navbar.navbar-fixed-top {
     padding-top: 7px;
 }
-h4 {
-    text-align: left;
+h3 {
+    text-align: left !important;
    /* background-image: url("../img/seta_baixo.svg") !important;
     background-repeat: no-repeat !important;
     background-position: right !important;*/
@@ -16,7 +16,7 @@ h4 {
 .panel-heading{
 
 }
-
+/*
 a:link {
     text-decoration: none;
     color: black;
@@ -30,4 +30,4 @@ a.nounderline:link{
 a:hover {
 	text-decoration: none;
 	color: black;
-}
+}*/
