@@ -2,7 +2,7 @@
 <html>
 <head>
 
-        <link href="../www/node_modules/jquery-ui-1.12.0/jquery-ui.css" rel="stylesheet">
+        <link href="../www/node_modules/jquery-ui-1.12.0/jquery-ui.min.css" rel="stylesheet">
         <link href="../www/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/lista.css">
         <meta name="format-detection" content="telephone=no">
@@ -28,9 +28,9 @@
   <!-- Inicio Accordion -->
 <div class="panel-group" id="accordion">
 
-          <h3 class="panel-title">
+          <a class="panel-title" style="text-decoration: none">
             AÇÃO 
-          </h3>
+          </a>
           <div class="panel-body">
             Acontecer agora. O ser (ou Eu) se faz movimento. Ecceidade de movimento. Ecceidade de ser. Quântico ordenado. Presença de variação contínua. Convenção lógico-matemática partitiva do movimento contínuo. Momento da energia em relação a um evento ou efeito.
             A ação: 1) no seu ato primeiro é intencionalidade pura; 2) no seu ato segundo (lógico e não de natureza) é fenomenologia mundana; 3) finalmente, é variação de energia quântica.
@@ -124,7 +124,7 @@
  <!-- ################ -->
 
 <script src="../www/node_modules/jquery-ui-1.12.0/external/jquery/jquery.js"></script>
-<script src="../www/node_modules/jquery-ui-1.12.0/jquery-ui.js"></script>
+<script src="../www/node_modules/jquery-ui-1.12.0/jquery-ui.min.js"></script>
 <script>
 var icons = {
       header: "ui-icon-caret-1-s",
@@ -132,7 +132,8 @@ var icons = {
     };
     $( "#accordion" ).accordion({
       icons: icons,
-      heightStyle: "content"
+      heightStyle: "content",
+      active: 1000
     });
 
 $("[data-type='accordion-search']").keyup(function () {
