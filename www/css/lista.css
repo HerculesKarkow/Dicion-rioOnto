@@ -6,11 +6,8 @@ body {
 .navbar.navbar-fixed-top {
     padding-top: 7px;
 }
-h3 {
-    text-align: left !important;
-   /* background-image: url("../img/seta_baixo.svg") !important;
-    background-repeat: no-repeat !important;
-    background-position: right !important;*/
+h4 {
+    text-align: left;
 }
 
 .panel-heading{
