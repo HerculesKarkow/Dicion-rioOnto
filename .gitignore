@@ -1,4 +1,5 @@
 platforms
 plugins
 hooks
-node_modules
+.vscode
+jsconfig.json

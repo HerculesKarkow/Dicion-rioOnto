@@ -6,3 +6,25 @@ body {
 .navbar.navbar-fixed-top {
     padding-top: 7px;
 }
+h4 {
+    text-align: left;
+}
+
+.panel-heading{
+
+}
+/*
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a.nounderline:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+	text-decoration: none;
+	color: black;
+}*/
