@@ -2,14 +2,14 @@
 <html>
 <head>
 
-        <link href="../www/node_modules/jquery-ui-1.12.0/jquery-ui.min.css" rel="stylesheet">
+        <link href="../www/node_modules/jquery-ui-1.12.0/jquery-ui.css" rel="stylesheet">
         <link href="../www/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/lista.css">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <meta charset="utf-8"/>
-	       <title>Lista</title>
+         <title>Lista</title>
 </head>
 <body>
   <!-- ################### -->
@@ -27,6 +27,7 @@
   <!-- ################ -->
   <!-- Inicio Accordion -->
 <div class="panel-group" id="accordion">
+
        
           <h4 class="panel-title" data-type="accordion-section-title">
             AÇÃO 
@@ -40,6 +41,8 @@
             </p>
           </div>
 
+
+       
           <h4 class="panel-title" data-type="accordion-section-title">
               AGRESSIVIDADE
           </h4>
@@ -56,6 +59,8 @@
             </p>
           </div>
 
+
+
           <h4 class="panel-title" data-type="accordion-section-title">
               ALMA
           </h4>
@@ -67,6 +72,8 @@
               Constituinte do ato, presença da forma que especifica a inteligência do organismo-homem.
             </p>
           </div>
+
+
 
           <h4 class="panel-title" data-type="accordion-section-title">
               AMBIENTE
@@ -80,11 +87,12 @@
               Espaço de interação de um sujeito: essa interação pode reforçar ou desagregar seja o sujeito que as suas relações.
             </P>
           </div>
+    
          
           <h4 class="panel-title" data-type="accordion-section-title">
               AMOR
           </h4>
-      
+        
           <div class="panel-body">
             <p>
               Surge de mim.
@@ -94,16 +102,19 @@
               Participar do próprio íntimo em desenvolvimento do outro.
             </P>
           </div>
-        
+
+         
           <h4 class="panel-title" data-type="accordion-section-title">
               ANGÚSTIA
-          </h4>        
-
+          </h4>
+        
           <div class="panel-body">
             <p>
               Estar restrito ao ângulo ou medo, devido a um instinto vital reprimido.
             </p>
           </div>
+      
+
            
           <h4 class="panel-title" data-type="accordion-section-title">
                APRENDIZAGEM
@@ -117,6 +128,8 @@
               b) com memória de repetição.
             </p>
           </div>
+        
+
        
           <h4 class="panel-title" data-type="accordion-section-title">
               ARQUÉTIPO
@@ -128,11 +141,13 @@
               Estrutura lógica que se põe ou faz-se princípio aos sucessivos e dependentes processos lógicos no universo das imagens.
             </p>
           </div>
-               
+       
+
+         
           <h4 class="panel-title" data-type="accordion-section-title">
               ATIVIDADE PSÍQUICA (PSIQUE)
           </h4>
-
+         
           <div class="panel-body">
             <p>
               A ação-base das modalidades do pensamento e da motivação do existir home, até a exteriorização somática (o corpo é palavra, o psíquico é sentido). “Realidade” psíquica (inconsciente, pulsões, associações, transposições, onírica, alucinações, visões etc.) deve ser entendida com a mesma concretude com a qual um físico concebe a matéria. É um mundo subjetivo operável como: a) intencionalidade em antecipação a qualquer fenomenologia; b) pensamento ou ato já formalizado; c) razão ou vontade consciente; d) via fantasiosa, artística, onírica.
@@ -146,26 +161,15 @@
  <!-- ################ -->
 
 <script src="../www/node_modules/jquery-ui-1.12.0/external/jquery/jquery.js"></script>
-<script src="../www/node_modules/jquery-ui-1.12.0/jquery-ui.min.js"></script>
+<script src="../www/node_modules/jquery-ui-1.12.0/jquery-ui.js"></script>
 <script>
-
 $( "#accordion" ).accordion();
-
 /*$( function() {
-var icons = {
-      header: "ui-icon-caret-1-s",
-      activeHeader: "ui-icon-caret-1-n"
-    };
     $( "#accordion" ).accordion({
-<<<<<<< HEAD
-      icons: icons,
-=======
->>>>>>> e5ce7830431b61f87d4b6a432de65ea77a777553
       heightStyle: "content",
       active: 1000
     });
   } );*/
-
 $("[data-type='accordion-search']").keyup(function () {
             var expression = false;
             var value = $(this).val();
@@ -191,7 +195,6 @@ $("[data-type='accordion-search']").keyup(function () {
                 }
             });
         });
-
 /*var availableTags = [
   "AÇÃO",
   "AGRESSIVIDADE",
@@ -206,8 +209,8 @@ $("[data-type='accordion-search']").keyup(function () {
 $( "#autocomplete" ).autocomplete({
   source: availableTags
 });*/
-
-</script>      
+</script>
+       
 
 </body>
 </html>
