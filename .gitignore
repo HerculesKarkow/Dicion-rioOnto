@@ -3,3 +3,4 @@ plugins
 hooks
 .vscode
 jsconfig.json
+platforms
