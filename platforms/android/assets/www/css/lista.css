@@ -15,9 +15,22 @@ h4 {
 }
 
 img{
-    height: 30px;
-    width: 30px;
+    height: 100px;
+    width: 100px;
     float: left;
+}
+button{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.comprar{
+	position: fixed;
+	
 }
 
 /*
