@@ -13,6 +13,13 @@ h4 {
 .panel-heading{
 
 }
+
+img{
+    height: 30px;
+    width: 30px;
+    float: left;
+}
+
 /*
 a:link {
     text-decoration: none;
