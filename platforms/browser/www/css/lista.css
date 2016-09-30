@@ -14,6 +14,11 @@ h4 {
 
 }
 
+.about{
+	height: 30px;
+    width: 30px;
+}
+
 img{
     height: 100px;
     width: 100px;
@@ -30,7 +35,7 @@ button{
 
 .comprar{
 	position: fixed;
-	
+
 }
 
 /*
