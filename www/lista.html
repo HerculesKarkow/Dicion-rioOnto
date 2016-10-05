@@ -17,13 +17,16 @@
     <div class="container-fluid">
       <div class="form-group">
         <div class="col-xs-1">
-        <img class="about" src="../www/img/infot.png" id="opener">
+          <img class="about" src="../www/img/infot.png" id="opener">
         </div>
         <div class="col-xs-1">
           <P> </P>
         </div>
-        <div class="col-xs-9">
+        <div class="col-xs-8">
           <input type="text" class="form-control" id="accordion_search_bar" data-type="accordion-search">
+        </div>
+        <div class="col-xs-1">
+          <button onclick="accordion_search_bar.value='';">apagar</button>
         </div>
       </div>
     </div>
@@ -91,78 +94,15 @@
       </div>
     </div>
   </div>
-</div>
-
-
-
-<!--<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default" id="collapseUm">
-    
-    <div class="panel-heading" role="tab" id="um">
+  <div class="panel panel-default" id="quatro">
+    <div class="panel-heading" role="tab" id="headCinco">
       <h4 class="panel-title">
-        <p role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="acao">
-          AÇÃO
-        </p>
-      </h4>
-    </div>
-    <div id="acao" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="um">
-      <div class="panel-body">
-        <p>
-          Acontecer agora. O ser (ou Eu) se faz movimento. Ecceidade de movimento. Ecceidade de ser.<b><button class="opener" data-id="quantico">Quântico<span class="glyphicon glyphicon-question-sign"></span></button></b>ordenado. Presença de variação contínua. Convenção lógico-matemática partitiva do movimento contínuo. Momento da energia em relação a um evento ou efeito.<br>   
-          A ação: 1) no seu ato primeiro é intencionalidade pura; 2) no seu ato segundo (lógico e não de natureza) é fenomenologia mundana; 3) finalmente, é variação de energia quântica.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default" id="collapseDois">
-    <div class="panel-heading" role="tab" id="dois">
-      <h4 class="panel-title">
-        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="agressividade">
-          AGRESSIVIDADE
-        </p>
-      </h4>
-    </div>
-    <div id="agrssividade" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="dois">
-      <div class="panel-body">
-        <p>
-          Fazer ou tomar passo, posse. Ir apoderar-se para metabolizar ou destruir.
-          Investimento de força em um contexto, segundo a forma intencional do primeiro do qual parte o investimento.
-          A saída de u quântico energético para englobar ou deformar (destruir ou transformar) o contexto-objeto que primeiro posicionou variância na modalidade de interação precedente.
-          Trata-se, substancialmente, de uma saída ou deslocamento energético por parte de uma individuação sobre outra, para formalizá-la segundo a própria vantagem, ou esforço de forma, ou ampliação de ação. A individuação invadida é metabolizada ou deformada do seu estado atual.
-          Componente primaria do instinto de crescimento e evolução para a unidade de ação, ou sujeito.
-          E contradita ou deformada, ativa depressões reativas de qualquer anomalia: psíquica, somática, social, etc.
-          O sucesso e o valor ou não valor da agressividade, especificam-se na ecceidade efetual e circunstancial do agente.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default" id="collapseTres">
-    <div class="panel-heading" role="tab" id="tres">
-      <h4 class="panel-title">
-        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="alma">
-          ALMA
-        </p>
-      </h4>
-    </div>
-    <div id="alma" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="tres">
-      <div class="panel-body">
-        <p>
-          Sopro, Movimento.
-          Ecceidade formal da semovência psíquica e de tudo que a semovência psíquica implica.
-          Constituinte do ato, presença da forma que especifica a inteligência do organismo-homem.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default" id="collapseQuatro">
-    <div class="panel-heading" role="tab" id="quatro">
-      <h4 class="panel-title">
-        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="ambiente">
+        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#ambiente"><i class="glyphicon glyphicon-menu-right"></i>
           AMBIENTE
         </p>
       </h4>
     </div>
-    <div id="ambiente" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="quatro">
+    <div id="ambiente" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headQuatro">
       <div class="panel-body">
         <p>
           O cerco ou espaço daquele ente.
@@ -173,15 +113,15 @@
       </div>
     </div>
   </div>
-  <div class="panel panel-default" id="collapseCinco">
-    <div class="panel-heading" role="tab" id="cinco">
+  <div class="panel panel-default" id="cinco">
+    <div class="panel-heading" role="tab" id="headCinco">
       <h4 class="panel-title">
-        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="amor">
+        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#amor"><i class="glyphicon glyphicon-menu-right"></i>
           AMOR
         </p>
       </h4>
     </div>
-    <div id="amor" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="cinco">
+    <div id="amor" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headCinco">
       <div class="panel-body">
         <p>
           Surge de mim.
@@ -193,15 +133,15 @@
       </div>
     </div>
   </div>
-  <div class="panel panel-default" id="collapseSeis">
-    <div class="panel-heading" role="tab" id="seis">
+  <div class="panel panel-default" id="seis">
+    <div class="panel-heading" role="tab" id="headSeis">
       <h4 class="panel-title">
-        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="angustia">
-          ANGÚSTIA
+        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#angustia"><i class="glyphicon glyphicon-menu-right"></i>
+          ÀNGÚSTIA
         </p>
       </h4>
     </div>
-    <div id="angustia" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="seis">
+    <div id="angustia" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headSeis">
       <div class="panel-body">
         <p>
           Estar restrito ao ângulo ou medo, devido a um instinto vital reprimido.
@@ -209,15 +149,15 @@
       </div>
     </div>
   </div>
-  <div class="panel panel-default" id="collapseSete">
-    <div class="panel-heading" role="tab" id="sete">
+  <div class="panel panel-default" id="sete">
+    <div class="panel-heading" role="tab" id="headSete">
       <h4 class="panel-title">
-        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="aprendizagem">
+        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#aprendizagem"><i class="glyphicon glyphicon-menu-right"></i>
           APRENDIZAGEM
         </p>
       </h4>
     </div>
-    <div id="aprendizagem" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="sete">
+    <div id="aprendizagem" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headSete">
       <div class="panel-body">
         <p>
           Me aproprio a partir do íntimo.
@@ -228,15 +168,15 @@
       </div>
     </div>
   </div>
-  <div class="panel panel-default" id="collapseOito">
-    <div class="panel-heading" role="tab" id="oito">
+  <div class="panel panel-default" id="oito">
+    <div class="panel-heading" role="tab" id="headOito">
       <h4 class="panel-title">
-        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="arquetipo">
+        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#arquetipo"><i class="glyphicon glyphicon-menu-right"></i>
           ARQUÉTIPO
         </p>
       </h4>
     </div>
-    <div id="arquetipo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="oito">
+    <div id="arquetipo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headOito">
       <div class="panel-body">
         <p>
           Início, origem; Pôr, tornar, fazer.
@@ -245,15 +185,15 @@
       </div>
     </div>
   </div>
-  <div class="panel panel-default" id="collapseNove">
-    <div class="panel-heading" role="tab" id="nove">
+  <div class="panel panel-default" id="nove">
+    <div class="panel-heading" role="tab" id="headNove">
       <h4 class="panel-title">
-        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="atividadePsiquica">
+        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#atividadepsiquica"><i class="glyphicon glyphicon-menu-right"></i>
           ATIVIDADE PSÍQUICA (PSIQUE)
         </p>
       </h4>
     </div>
-    <div id="atividadePsiquica" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="nove">
+    <div id="atividadepsiquica" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headNove">
       <div class="panel-body">
         <p>
           A ação-base das modalidades do pensamento e da motivação do existir home, até a exteriorização somática (o corpo é palavra, o psíquico é sentido). “Realidade” psíquica(<b><button class="opener" data-id="inconsciente">inconsciente<span class="glyphicon glyphicon-question-sign" ></span></button></b>,pulsões, associações, transposições, onírica, alucinações, visões etc.) deve ser entendida com a mesma concretude com a qual um físico concebe a matéria. É um mundo subjetivo operável como: a) intencionalidade em antecipação a qualquer fenomenologia; b) pensamento ou ato já formalizado; c) razão ou vontade consciente; d) via fantasiosa, artística, onírica.
@@ -262,8 +202,7 @@
       </div>
     </div>
   </div>
-</div>-->
-
+</div>
 <!-- __________________________________________Fim do Accordion_____________________________________________-->
 <!--________________________________________________________________________________________________________-->
 
