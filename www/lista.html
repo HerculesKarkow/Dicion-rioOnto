@@ -11,14 +11,8 @@
         <link href="../www/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-<div id="dialog" title="Informações">
-
-  <p>
-
-  </p>
-</div>
-  <!-- ################### -->
-  <!-- Inicio Input Search -->
+<!--________________________________________________________________________________________________________-->
+<!-- _____________________________________Inicio da Barra de Pesquisa_______________________________________-->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="form-group">
@@ -29,17 +23,16 @@
           <P> </P>
         </div>
         <div class="col-xs-9">
-          <input type="text" class="form-control" id="autocomplete" data-type="accordion-search">
+          <input type="text" class="form-control" id="busca" data-type="accordion-search">
         </div>
       </div>
     </div>
   </nav>
-  <!-- Fim do Input Search -->
-  <!-- ################### -->
+<!-- ______________________________________Fim da Barra de Pesquisa_________________________________________-->
+<!--________________________________________________________________________________________________________-->
 
-
-<!-- ################ -->
-<!-- Inicio Accordion -->
+<!--________________________________________________________________________________________________________-->
+<!-- _______________________________________Inicio do Accordion_____________________________________________-->
 <div class="panel-group" id="accordion">
 
        
@@ -48,7 +41,7 @@
           </h4>
           <div class="panel-body" aria-expanded="false" data-toggle="collapse">
             <p>
-              Acontecer agora. O ser (ou Eu) se faz movimento. Ecceidade de movimento. Ecceidade de ser.<b><button class="opener" data-id="pensamento">Quântico<span class="glyphicon glyphicon-question-sign"></span></button></b>ordenado. Presença de variação contínua. Convenção lógico-matemática partitiva do movimento contínuo. Momento da energia em relação a um evento ou efeito.<br>   
+              Acontecer agora. O ser (ou Eu) se faz movimento. Ecceidade de movimento. Ecceidade de ser.<b><button class="opener" data-id="quantico">Quântico<span class="glyphicon glyphicon-question-sign"></span></button></b>ordenado. Presença de variação contínua. Convenção lógico-matemática partitiva do movimento contínuo. Momento da energia em relação a um evento ou efeito.<br>   
               A ação: 1) no seu ato primeiro é intencionalidade pura; 2) no seu ato segundo (lógico e não de natureza) é fenomenologia mundana; 3) finalmente, é variação de energia quântica.
             </p>
           </div>
@@ -145,12 +138,11 @@
             </p>
           </div>
 </div>
-<!-- Fim do Accordion -->
-<!-- ################ -->
+<!-- __________________________________________Fim do Accordion_____________________________________________-->
+<!--________________________________________________________________________________________________________-->
 
-
-<!-- Inicio do Modal de Compras -->
-<!-- ########################## -->
+<!--________________________________________________________________________________________________________-->
+<!-- ___________________________________Inicio do Modal de Compras__________________________________________-->
     <div class="modal fade" id="description-modal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -171,9 +163,9 @@
               </div>
             </div>
           
-            <div id="pensamento">
+            <div id="quantico">
               <p>
-                Quer saber mais sobre o pensamento? Adiquira o livro A Paideia Ôntica.<br>
+                Quer saber mais sobre o quântico? Adiquira o livro A Paideia Ôntica.<br>
                 <img class="livros" src="../www/img/a_pandeia_ontica.png"><br>
               </p>
               <div class="modal-footer">
@@ -181,18 +173,36 @@
               </div>
             </div>
           </div>
-<!--<div class="modal-footer">
-<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-<button type="button" class="btn btn-primary">Comprar</button>
-</div>-->
+<!-- 
+======>>>>Esses botões servem para adicionar o comprar e o fechar no modal <<<<======
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+  <button type="button" class="btn btn-primary">Comprar</button>
+</div>
+-->
         </div>
       </div>
     </div>
+    <div id="dialog" title="Informações">
+      <p>
+        Obrigado por instalar o nosso aplicativo.<br>
+        Saiba que isso é muito importante para nós.
+        <br>
+        <br>
+        <p style="text-align: right;">Welt IT Solutions</p>
+      </p>
+    </div>
+<!-- _____________________________________Fim do Modal de Compras___________________________________________-->
+<!--________________________________________________________________________________________________________-->
 
 <script src="../www/node_modules/jquery-ui-1.12.0/external/jquery/jquery.js"></script>
 <script src="../www/node_modules/jquery-ui-1.12.0/jquery-ui.js"></script>
 <script src="../www/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script>
+  //Chamada do accordion
+  $( "#accordion" ).accordion(); 
+  
+  //Função do Modal
   $( function() {
     $( "#dialog" ).dialog({
       autoOpen: false,
@@ -205,94 +215,30 @@
         duration: 1000
       }
     });
-
     $('.opener').on('click', function () {
       var modal = $('#description-modal')
-
       modal.find('.modal-body > div').hide();
       modal.find('.modal-body > #' + $(this).data('id')).show();
       modal.modal('show');
-
     });
  
     $( "#opener" ).on( "click", function() {
       $( "#dialog" ).dialog( "open" );
     });
-  } );
-
-
-
-
-$( "#accordion" ).accordion();
-
-/*search*/
-(function(){
-  var searchTerm, panelContainerId;
-  $('#autocomplete').on('click', function () {
-    searchTerm = $(this).val();
-    $('#accordion > .panel').each(function () {
-      panelContainerId = '#' + $(this).attr('id');
-      $(panelContainerId + ':not(:contains(' + searchTerm + '))').hide();
-      $(panelContainerId + ':contains(' + searchTerm + ')').show();
-    });
   });
-}());
 
-
-
-
-/*$( function() {
-    $( "#accordion" ).accordion({
-      heightStyle: "content",
-      active: 10000
+  //Função Search
+  (function(){
+    var searchTerm, panelContainerId;
+    $('#busca').on('click', function () {
+      searchTerm = $(this).val();
+      $('#accordion > .panel').each(function () {
+        panelContainerId = '.' + $(this).attr('accordion-section-title');
+        $(panelContainerId + ':not(:contains(' + searchTerm + '))').hide();
+        $(panelContainerId + ':contains(' + searchTerm + ')').show();
+      });
     });
-  } );*/
-
-/*$(document).ready(function() {
-  for (var i=0; i<20; i++){      
-        $("#accordion").append('<h4 class="panel-title" data-type="accordion-section-title">PALAVRA</h4><div class="panel-body"><p>Estar restrito ao ângulo ou medo, devido a um instinto vital reprimido.</p></div>').accordion('refresh');
-    } 
-});
-
-$("[data-type='accordion-search']").keyup(function () {
-            var expression = false;
-            var value = $(this).val();
-            var finder = "";
-            if (value.indexOf("\"") > -1 && value.lastIndexOf("\"") > 0) {
-                finder = value.substring(eval(value.indexOf("\"")) + 1, value.lastIndexOf("\""));
-                expression = true;
-            }
-            $("[data-type='accordion-section-title']").each(function () {
-                var title = $(this).find("[data-type='accordion-section-title']").text();
-                if (expression) {
-                    if ($(this).text().toLowerCase().search(finder.toLowerCase()) == -1) {
-                        $(this).hide();
-                    } else {
-                        $(this).show();
-                    }
-                } else {
-                    if (title.toLowerCase().indexOf(value.toLowerCase()) < 0) {
-                        $(this).hide();
-                    } else {
-                        $(this).show();
-                    }
-                }
-            });
-        });
-/*var availableTags = [
-  "AÇÃO",
-  "AGRESSIVIDADE",
-  "ALMA",
-  "AMBIENTE",
-  "AMOR",
-  "ANGÚSTIA",
-  "APRENDIZAGEM",
-  "ARQUÉTIPO",
-  "ATIVIDADE PSÍQUICA (PSIQUE)"
-];
-$( "#autocomplete" ).autocomplete({
-  source: availableTags
-});*/
+  }());
 </script>
 </body>
 </html>
