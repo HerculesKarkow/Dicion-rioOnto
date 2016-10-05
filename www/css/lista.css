@@ -25,6 +25,14 @@ img{
     float: left;
 }
 
+h4.panel-title{
+    font-size: 20px;
+}
+
+.panel-body{
+    font-size: 18px;
+}
+
 .livros{
     height: 185px;
     width: 185px;
