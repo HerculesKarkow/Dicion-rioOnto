@@ -6,12 +6,12 @@
         <param name="onload" value="true" />
     </feature>
     <allow-intent href="market:*" />
-    <name>Dicionário de Ontopsicologia</name>
+    <name>Helloword</name>
     <description>
-        Um aplicativo simples que contém todas as palavras do Dicionário de Ontopsicologia.
+        A sample Apache Cordova application that responds to the deviceready event.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Welt IT Solutions
+        Apache Cordova Team
     </author>
     <content src="index.html" />
     <access origin="*" />

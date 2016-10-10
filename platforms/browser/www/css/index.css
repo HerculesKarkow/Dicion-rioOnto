@@ -47,10 +47,9 @@ body {
 
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
     position:absolute;             /* position in the center of the screen */
     left:50%;
-    top:35%;
+    top:3%;
     height:50px;                   /* text area height */
     width:225px;                   /* text area width */
     text-align:center;
@@ -59,7 +58,6 @@ body {
                                  /* offset horizontal: half of text area width */}
 
 .appLogin {
-    background:url(../img/jet_transparent.png) no-repeat center top; /* 170px x 200px */
     position:absolute;             /* position in the center of the screen */
     left:50%;
     top:30%;
@@ -108,41 +106,10 @@ h1 {
     background-color:#4B946A;
     display:none;
 }
-
-/*@keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
-}
- 
-@-webkit-keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
-}*/
  
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
-}
-
-#btnEntrar {
-    margin-top: 30px;
-    background-color:#077a26;
-    -moz-border-radius:18px;
-    -webkit-border-radius:18px;
-    border-radius:18px;
-    color:#000000;
-    font-family:Georgia;
-    font-weight:bold;
-    font-style:italic;
-    padding:3px 19px;
-    text-decoration:none;
-    text-shadow:-1px -1px 6px #000000;
-}
-
-.btn-success {
-    margin-top: 50px;
 }
 
 .btn-danger {
