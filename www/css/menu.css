@@ -24,6 +24,7 @@ body {
 
 .botao{
 	width: 200px;
+	height: 44px;
 	border: 20px transparent;
 }
 
@@ -34,5 +35,5 @@ ul.nav li {
 
 ul.nav li a {
 	text-align:center;
-	text-decoration: hover;
+	font-size: x-large;
 }
