@@ -37,3 +37,6 @@ ul.nav li a {
 	text-align:center;
 	font-size: x-large;
 }
+span.glyphicon {
+	font-size: 2.2em;
+}
