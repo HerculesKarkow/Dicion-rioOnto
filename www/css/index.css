@@ -20,11 +20,11 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
-body {
+/*body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
+    /*-webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    /*-webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+   /* background-color:#E4E4E4;
     background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
@@ -43,30 +43,28 @@ body {
     padding:0px;
     text-transform:uppercase;
     width:100%;
+}*/
+
+body {
+    background: url(..img/bg_onto.jpg) no-repeat center top fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* Portrait layout (default) */
 .app {
     position:absolute;             /* position in the center of the screen */
     left:50%;
-    top:3%;
+    top:-15%;
     height:50px;                   /* text area height */
     width:225px;                   /* text area width */
     text-align:center;
     padding:220px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
     margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                 /* offset horizontal: half of text area width */}
-
-.appLogin {
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:30%;
-    height:100px;                   /* text area height */
-    width:230px;                   /* text area width */
-    text-align:center;
-    padding:130px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+                                 /* offset horizontal: half of text area width */
 }
 
 /* Landscape layout (with min-width) */
@@ -115,3 +113,4 @@ h1 {
 .btn-danger {
     margin-top: 50px;
 }
+
