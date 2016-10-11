@@ -24,6 +24,21 @@ img{
     width: 100px;
     float: left;
 }
+
+h4.panel-title{
+    font-size: 20px;
+}
+
+.panel-body{
+    font-size: 18px;
+}
+
+.livros{
+    height: 185px;
+    width: 185px;
+    float: left;
+}
+
 button{
 	background-color: Transparent;
     background-repeat:no-repeat;
@@ -35,21 +50,13 @@ button{
 
 .comprar{
 	position: fixed;
-
 }
 
-/*
-a:link {
-    text-decoration: none;
-    color: black;
+.ui-accordion .ui-accordion-header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0 0 0;
+    padding: .7em .8em .7em .6em;
+    font-size: 100%;
 }
-
-a.nounderline:link{
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-	text-decoration: none;
-	color: black;
-}*/
